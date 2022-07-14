@@ -68,7 +68,6 @@ namespace TicTacToe
             this.box3.Size = new System.Drawing.Size(51, 55);
             this.box3.TabIndex = 1;
             this.box3.Text = "0";
-            this.box3.Visible = false;
             this.box3.Click += new System.EventHandler(this.box3_Click);
             // 
             // box2
@@ -219,7 +218,7 @@ namespace TicTacToe
             this.Controls.Add(this.box1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TicTacToe";
             this.ResumeLayout(false);
             this.PerformLayout();
 
