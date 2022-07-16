@@ -105,6 +105,10 @@ namespace TicTacToe
                 t.add_p1_choices("b4");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show("player: " + box4.Text + " wins!");
+                    }
                     t.clear_p1_choices();
                 }
             }
