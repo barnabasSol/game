@@ -50,6 +50,10 @@ namespace TicTacToe
                 box2.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b2");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -57,6 +61,10 @@ namespace TicTacToe
                 box2.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b2");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
 
         }
@@ -69,6 +77,10 @@ namespace TicTacToe
                 box3.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b3");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -76,6 +88,10 @@ namespace TicTacToe
                 box3.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b3");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -87,6 +103,10 @@ namespace TicTacToe
                 box4.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b4");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -94,6 +114,10 @@ namespace TicTacToe
                 box4.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b4");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -105,6 +129,10 @@ namespace TicTacToe
                 box5.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b5");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -112,6 +140,10 @@ namespace TicTacToe
                 box5.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b5");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -123,6 +155,10 @@ namespace TicTacToe
                 box6.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b6");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -130,6 +166,10 @@ namespace TicTacToe
                 box6.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b6");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -141,6 +181,10 @@ namespace TicTacToe
                 box7.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b7");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -148,6 +192,10 @@ namespace TicTacToe
                 box7.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b7");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -159,6 +207,10 @@ namespace TicTacToe
                 box8.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b8");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -166,6 +218,10 @@ namespace TicTacToe
                 box8.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b8");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
@@ -177,6 +233,10 @@ namespace TicTacToe
                 box9.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b9");
+                if (t.get_p1_choices().Count == 3)
+                {
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -184,10 +244,14 @@ namespace TicTacToe
                 box9.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b9");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    t.clear_p2_choices();
+                }
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void restart_button(object sender, EventArgs e)
         {
             isNext = false;
             box1.Text = "0";
