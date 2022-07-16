@@ -14,13 +14,12 @@ namespace TicTacToe
     {
         string winner;
         string loser;
-        ArrayList<String> player1 = new ArrayList<String>();
+        TicTac t = new TicTac();
         bool isNext = false;
         public Form1()
         {
             InitializeComponent();
         }
-        TicTac t = new TicTac();
 
         private void box1_Click(object sender, EventArgs e)
         {
@@ -30,6 +29,15 @@ namespace TicTacToe
                 box1.ForeColor = Color.Red;
                 isNext = true;
                 t.add_p1_choices("b1");
+                if (t.get_p1_choices().Count() == 3)
+                {
+                    if (t.check_if_won(t.get_p1_choices())==true)
+                    {
+                        Console.Write(t.check_if_won(t.get_p1_choices()));
+                        MessageBox.Show(box1.Text + " won!");
+                    }
+                    t.clear_p1_choices();
+                }
             }
             else
             {
@@ -37,9 +45,15 @@ namespace TicTacToe
                 box1.ForeColor = Color.Green;
                 isNext = false;
                 t.add_p2_choices("b1");
+                if (t.get_p2_choices().Count == 3)
+                {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
+                    t.clear_p2_choices();
+                }
             }
-
-           
         }
 
         private void box2_Click(object sender, EventArgs e)
@@ -52,6 +66,10 @@ namespace TicTacToe
                 t.add_p1_choices("b2");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -63,6 +81,10 @@ namespace TicTacToe
                 t.add_p2_choices("b2");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -79,6 +101,10 @@ namespace TicTacToe
                 t.add_p1_choices("b3");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -90,6 +116,10 @@ namespace TicTacToe
                 t.add_p2_choices("b3");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -107,7 +137,7 @@ namespace TicTacToe
                 {
                     if (t.check_if_won(t.get_p1_choices()))
                     {
-                        MessageBox.Show("player: " + box4.Text + " wins!");
+                        MessageBox.Show(box1.Text + " won!");
                     }
                     t.clear_p1_choices();
                 }
@@ -120,6 +150,10 @@ namespace TicTacToe
                 t.add_p2_choices("b4");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -135,6 +169,10 @@ namespace TicTacToe
                 t.add_p1_choices("b5");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -146,6 +184,10 @@ namespace TicTacToe
                 t.add_p2_choices("b5");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -161,6 +203,10 @@ namespace TicTacToe
                 t.add_p1_choices("b6");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -172,6 +218,10 @@ namespace TicTacToe
                 t.add_p2_choices("b6");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -187,6 +237,10 @@ namespace TicTacToe
                 t.add_p1_choices("b7");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -198,6 +252,10 @@ namespace TicTacToe
                 t.add_p2_choices("b7");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -213,6 +271,10 @@ namespace TicTacToe
                 t.add_p1_choices("b8");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -224,6 +286,10 @@ namespace TicTacToe
                 t.add_p2_choices("b8");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
@@ -239,6 +305,10 @@ namespace TicTacToe
                 t.add_p1_choices("b9");
                 if (t.get_p1_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p1_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p1_choices();
                 }
             }
@@ -250,6 +320,10 @@ namespace TicTacToe
                 t.add_p2_choices("b9");
                 if (t.get_p2_choices().Count == 3)
                 {
+                    if (t.check_if_won(t.get_p2_choices()))
+                    {
+                        MessageBox.Show(box1.Text + " won!");
+                    }
                     t.clear_p2_choices();
                 }
             }
