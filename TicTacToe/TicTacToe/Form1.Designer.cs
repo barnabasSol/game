@@ -64,7 +64,7 @@ namespace TicTacToe
             this.box3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.box3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.box3.Location = new System.Drawing.Point(246, 109);
+            this.box3.Location = new System.Drawing.Point(237, 109);
             this.box3.Name = "box3";
             this.box3.Size = new System.Drawing.Size(51, 55);
             this.box3.TabIndex = 1;
@@ -90,7 +90,7 @@ namespace TicTacToe
             this.box6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.box6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.box6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.box6.Location = new System.Drawing.Point(246, 183);
+            this.box6.Location = new System.Drawing.Point(237, 183);
             this.box6.Name = "box6";
             this.box6.Size = new System.Drawing.Size(51, 55);
             this.box6.TabIndex = 3;
