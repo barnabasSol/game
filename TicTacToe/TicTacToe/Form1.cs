@@ -13,7 +13,6 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
-        TicTac t = new TicTac();
         bool symbolTurn = false;
         bool b1AlreadyClicked = false;
         bool b2AlreadyClicked = false;
@@ -46,7 +45,6 @@ namespace TicTacToe
                         winnerlabel.ForeColor = Color.Green;
                     }
                     symbolTurn = true;
-
                 }
                 else
                 {
@@ -374,6 +372,11 @@ namespace TicTacToe
             box9.Text = "0";
             box9.ForeColor = Color.Black;
             winnerlabel.ForeColor = Color.Black;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }
