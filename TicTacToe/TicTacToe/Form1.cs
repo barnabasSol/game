@@ -14,7 +14,7 @@ namespace TicTacToe
     public partial class Form1 : Form
     {
         TicTac t = new TicTac();
-        bool isNext = false;
+        bool symbolTurn = false;
         bool b1AlreadyClicked = false;
         bool b2AlreadyClicked = false;
         bool b3AlreadyClicked = false;
@@ -34,19 +34,32 @@ namespace TicTacToe
         {
             if (!b1AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box1.Text = "X";
                     box1.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box1.Text==box2.Text && box1.Text==box3.Text) ||
+                        (box1.Text==box4.Text && box1.Text==box7.Text) ||
+                        (box1.Text == box5.Text && box1.Text == box9.Text))
+                    {
+                        winnerlabel.Text = box1.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box1.Text = "O";
                     box1.ForeColor = Color.Green;
-                    isNext = false;
-
+                    if ((box1.Text == box2.Text && box1.Text == box3.Text) ||
+                       (box1.Text == box4.Text && box1.Text == box7.Text) ||
+                       (box1.Text == box5.Text && box1.Text == box9.Text))
+                    {
+                        winnerlabel.Text = box1.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
                 }
             }
             b1AlreadyClicked = true;        }
@@ -55,18 +68,30 @@ namespace TicTacToe
         {
             if (!b2AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box2.Text = "X";
                     box2.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box2.Text == box1.Text && box2.Text == box3.Text) ||
+                       (box2.Text == box5.Text && box2.Text == box8.Text))
+                    {
+                        winnerlabel.Text = box2.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box2.Text = "O";
                     box2.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box2.Text == box1.Text && box2.Text == box3.Text) ||
+                      (box2.Text == box5.Text && box2.Text == box8.Text))
+                    {
+                        winnerlabel.Text = box2.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
 
                 }
             }
@@ -78,18 +103,32 @@ namespace TicTacToe
         {
             if (!b3AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box3.Text = "X";
                     box3.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box3.Text == box6.Text && box3.Text == box9.Text) ||
+                      (box3.Text == box2.Text && box3.Text == box1.Text) ||
+                      (box3.Text == box5.Text && box1.Text == box7.Text))
+                    {
+                        winnerlabel.Text = box3.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box3.Text = "O";
                     box3.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box3.Text == box6.Text && box3.Text == box9.Text) ||
+                     (box3.Text == box2.Text && box3.Text == box1.Text) ||
+                     (box3.Text == box5.Text && box1.Text == box7.Text))
+                    {
+                        winnerlabel.Text = box3.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
 
                 }
                 b3AlreadyClicked = true;
@@ -100,18 +139,30 @@ namespace TicTacToe
         {
             if (!b4AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box4.Text = "X";
                     box4.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box4.Text == box5.Text && box4.Text == box6.Text) ||
+                      (box4.Text == box1.Text && box4.Text == box7.Text))
+                    {
+                        winnerlabel.Text = box4.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box4.Text = "O";
                     box4.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box4.Text == box5.Text && box4.Text == box6.Text) ||
+                    (box4.Text == box1.Text && box4.Text == box7.Text))
+                    {
+                        winnerlabel.Text = box4.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
 
                 }
             }
@@ -121,18 +172,34 @@ namespace TicTacToe
         private void box5_Click(object sender, EventArgs e)
         {
             if (!b5AlreadyClicked){
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box5.Text = "X";
                     box5.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box5.Text == box1.Text && box5.Text == box9.Text) || 
+                        (box5.Text == box3.Text && box5.Text == box7.Text) ||
+                        (box5.Text == box4.Text && box5.Text == box6.Text) ||
+                        (box5.Text == box2.Text && box5.Text == box8.Text))
+                    {
+                        winnerlabel.Text = box5.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box5.Text = "O";
                     box5.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box5.Text == box1.Text && box5.Text == box9.Text) ||
+                       (box5.Text == box3.Text && box5.Text == box7.Text) ||
+                       (box5.Text == box4.Text && box5.Text == box6.Text) ||
+                       (box5.Text == box2.Text && box5.Text == box8.Text))
+                    {
+                        winnerlabel.Text = box5.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
 
                 }
             }
@@ -143,18 +210,30 @@ namespace TicTacToe
         {
             if (!b6AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box6.Text = "X";
                     box6.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box6.Text == box3.Text && box6.Text == box9.Text) ||
+                     (box6.Text == box5.Text && box6.Text == box4.Text))
+                    {
+                        winnerlabel.Text = box6.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box6.Text = "O";
                     box6.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box6.Text == box3.Text && box6.Text == box9.Text) ||
+                     (box6.Text == box5.Text && box6.Text == box4.Text))
+                    {
+                        winnerlabel.Text = box6.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
 
                 }
             }
@@ -165,18 +244,32 @@ namespace TicTacToe
         {
             if (!b7AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box7.Text = "X";
                     box7.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box7.Text == box4.Text && box7.Text == box1.Text) ||
+                       (box7.Text == box8.Text && box7.Text == box9.Text) ||
+                       (box7.Text == box5.Text && box7.Text == box3.Text))
+                    {
+                        winnerlabel.Text = box7.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box7.Text = "O";
                     box7.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box7.Text == box4.Text && box7.Text == box1.Text) ||
+                        (box7.Text == box8.Text && box7.Text == box9.Text) ||
+                        (box7.Text == box5.Text && box7.Text == box3.Text))
+                    {
+                        winnerlabel.Text = box7.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
                 }
             }
             b7AlreadyClicked = true;
@@ -186,18 +279,30 @@ namespace TicTacToe
         {
             if (!b8AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box8.Text = "X";
                     box8.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box8.Text == box5.Text && box8.Text == box2.Text) ||
+                       (box8.Text == box7.Text && box8.Text == box9.Text))
+                    {
+                        winnerlabel.Text = box8.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box8.Text = "O";
                     box8.ForeColor = Color.Green;
-                    isNext = false;
+                    if ((box8.Text == box5.Text && box8.Text == box2.Text) ||
+                      (box8.Text == box7.Text && box8.Text == box9.Text))
+                    {
+                        winnerlabel.Text = box8.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
                 }
             }
             b8AlreadyClicked = true;
@@ -207,19 +312,32 @@ namespace TicTacToe
         {
             if (!b9AlreadyClicked)
             {
-                if (!isNext)
+                if (!symbolTurn)
                 {
                     box9.Text = "X";
                     box9.ForeColor = Color.Red;
-                    isNext = true;
+                    if ((box9.Text == box8.Text && box9.Text == box7.Text) ||
+                       (box9.Text == box6.Text && box9.Text == box3.Text) ||
+                       (box9.Text == box5.Text && box9.Text == box1.Text))
+                    {
+                        winnerlabel.Text = box9.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = true;
 
                 }
                 else
                 {
                     box9.Text = "O";
                     box9.ForeColor = Color.Green;
-                    isNext = false;
-
+                    if ((box9.Text == box8.Text && box9.Text == box7.Text) ||
+                     (box9.Text == box6.Text && box9.Text == box3.Text) ||
+                     (box9.Text == box5.Text && box9.Text == box1.Text))
+                    {
+                        winnerlabel.Text = box9.Text + " wins!";
+                        winnerlabel.ForeColor = Color.Green;
+                    }
+                    symbolTurn = false;
                 }
             }
             b9AlreadyClicked = true;
@@ -227,7 +345,7 @@ namespace TicTacToe
 
         private void restart_button(object sender, EventArgs e)
         {
-            isNext = false;
+            symbolTurn = false;
             b1AlreadyClicked = false;
             b2AlreadyClicked = false;
             b3AlreadyClicked = false;
@@ -255,6 +373,7 @@ namespace TicTacToe
             box8.ForeColor = Color.Black;
             box9.Text = "0";
             box9.ForeColor = Color.Black;
+            winnerlabel.ForeColor = Color.Black;
         }
     }
 }

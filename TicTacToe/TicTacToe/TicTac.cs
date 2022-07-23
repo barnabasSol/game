@@ -49,34 +49,5 @@ namespace TicTacToe
         {
             return player2_choices;
         }
-
-        public bool check_if_won(List<string> p)
-        {
-            bool is_it_equal = false;
-
-            for (int i = 0; i < 8; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    if (p[j] == win_patterns[i, j])
-                    {
-                        is_it_equal = true;
-                    }
-                    else
-                    {
-                        is_it_equal = false;
-                        break;
-                    }
-
-                }
-                if (is_it_equal)
-                {
-                    is_it_equal = true;
-                    break;
-                }
-            }
-            return is_it_equal;
-        }
-
     }
 }
