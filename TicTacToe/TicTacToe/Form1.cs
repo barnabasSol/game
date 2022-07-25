@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 //CODE BY: BARNABAS SOLOMON
 
@@ -111,7 +105,7 @@ namespace TicTacToe
                     box3.ForeColor = Color.Red;
                     if ((box3.Text == box6.Text && box3.Text == box9.Text) ||
                       (box3.Text == box2.Text && box3.Text == box1.Text) ||
-                      (box3.Text == box5.Text && box1.Text == box7.Text))
+                      (box3.Text == box5.Text && box3.Text == box7.Text))
                     {
                         winnerlabel.Text = box3.Text + " wins!";
                         winnerlabel.ForeColor = Color.Green;
@@ -126,7 +120,7 @@ namespace TicTacToe
                     box3.ForeColor = Color.Green;
                     if ((box3.Text == box6.Text && box3.Text == box9.Text) ||
                      (box3.Text == box2.Text && box3.Text == box1.Text) ||
-                     (box3.Text == box5.Text && box1.Text == box7.Text))
+                     (box3.Text == box5.Text && box3.Text == box7.Text))
                     {
                         winnerlabel.Text = box3.Text + " wins!";
                         winnerlabel.ForeColor = Color.Green;
