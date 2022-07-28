@@ -36,7 +36,7 @@ namespace TicTacToe
                         (box1.Text == box5.Text && box1.Text == box9.Text))
                     {
                         winnerlabel.Text = box1.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -70,7 +70,7 @@ namespace TicTacToe
                        (box2.Text == box5.Text && box2.Text == box8.Text))
                     {
                         winnerlabel.Text = box2.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -108,7 +108,7 @@ namespace TicTacToe
                       (box3.Text == box5.Text && box3.Text == box7.Text))
                     {
                         winnerlabel.Text = box3.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -145,7 +145,7 @@ namespace TicTacToe
                       (box4.Text == box1.Text && box4.Text == box7.Text))
                     {
                         winnerlabel.Text = box4.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -182,7 +182,7 @@ namespace TicTacToe
                         (box5.Text == box2.Text && box5.Text == box8.Text))
                     {
                         winnerlabel.Text = box5.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -220,7 +220,7 @@ namespace TicTacToe
                      (box6.Text == box5.Text && box6.Text == box4.Text))
                     {
                         winnerlabel.Text = box6.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -257,7 +257,7 @@ namespace TicTacToe
                        (box7.Text == box5.Text && box7.Text == box3.Text))
                     {
                         winnerlabel.Text = box7.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -293,7 +293,7 @@ namespace TicTacToe
                        (box8.Text == box7.Text && box8.Text == box9.Text))
                     {
                         winnerlabel.Text = box8.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
@@ -329,7 +329,7 @@ namespace TicTacToe
                        (box9.Text == box5.Text && box9.Text == box1.Text))
                     {
                         winnerlabel.Text = box9.Text + " wins!";
-                        winnerlabel.ForeColor = Color.Green;
+                        winnerlabel.ForeColor = Color.Red;
                         stopGame();
                     }
                     symbolTurn = true;
