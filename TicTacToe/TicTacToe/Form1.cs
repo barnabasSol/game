@@ -7,6 +7,8 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
+        int x_score = 0;
+        int o_score = 0;
         bool symbolTurn = false;
         bool b1AlreadyClicked = false;
         bool b2AlreadyClicked = false;
@@ -355,7 +357,23 @@ namespace TicTacToe
 
         private void restart_button(object sender, EventArgs e)
         {
-            symbolTurn = false;
+            if (winnerlabel.Text == "O" + " wins!")
+            {
+                symbolTurn = true;
+                o_score += 1;
+                oscorelbl.Text = o_score.ToString();
+                oscorelbl.ForeColor = Color.Green;
+            }
+            else if (winnerlabel.Text == "X" + " wins!")
+            {
+                symbolTurn = false;
+                x_score += 1;
+                xscorelbl.Text = x_score.ToString();
+                xscorelbl.ForeColor = Color.Red;
+            }
+
+            winnerlabel.Text = "";
+
             b1AlreadyClicked = false;
             b2AlreadyClicked = false;
             b3AlreadyClicked = false;
