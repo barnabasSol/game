@@ -7,8 +7,6 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
-        int x_score = 0;
-        int o_score = 0;
         bool symbolTurn = false;
         bool b1AlreadyClicked = false;
         bool b2AlreadyClicked = false;
@@ -360,15 +358,17 @@ namespace TicTacToe
             if (winnerlabel.Text == "O" + " wins!")
             {
                 symbolTurn = true;
-                o_score += 1;
-                oscorelbl.Text = o_score.ToString();
+                int oscore = int.Parse(oscorelbl.Text);
+                oscore += 1;
+                oscorelbl.Text = oscore.ToString();
                 oscorelbl.ForeColor = Color.Green;
             }
             else if (winnerlabel.Text == "X" + " wins!")
             {
                 symbolTurn = false;
-                x_score += 1;
-                xscorelbl.Text = x_score.ToString();
+                int xscore = int.Parse(xscorelbl.Text);
+                xscore += 1;
+                xscorelbl.Text = xscore.ToString();
                 xscorelbl.ForeColor = Color.Red;
             }
 

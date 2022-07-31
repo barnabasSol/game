@@ -227,40 +227,44 @@ namespace TicTacToe
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(27, 9);
+            this.label5.Location = new System.Drawing.Point(21, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 13);
+            this.label5.Size = new System.Drawing.Size(18, 18);
             this.label5.TabIndex = 15;
             this.label5.Text = "X";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(27, 40);
+            this.label6.Location = new System.Drawing.Point(21, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(15, 13);
+            this.label6.Size = new System.Drawing.Size(20, 18);
             this.label6.TabIndex = 16;
             this.label6.Text = "O";
             // 
             // xscorelbl
             // 
             this.xscorelbl.AutoSize = true;
-            this.xscorelbl.Location = new System.Drawing.Point(47, 9);
+            this.xscorelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xscorelbl.Location = new System.Drawing.Point(47, 33);
             this.xscorelbl.Name = "xscorelbl";
-            this.xscorelbl.Size = new System.Drawing.Size(35, 13);
+            this.xscorelbl.Size = new System.Drawing.Size(16, 18);
             this.xscorelbl.TabIndex = 17;
-            this.xscorelbl.Text = "label7";
+            this.xscorelbl.Text = "0";
             // 
             // oscorelbl
             // 
             this.oscorelbl.AutoSize = true;
-            this.oscorelbl.Location = new System.Drawing.Point(48, 40);
+            this.oscorelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.oscorelbl.Location = new System.Drawing.Point(47, 69);
             this.oscorelbl.Name = "oscorelbl";
-            this.oscorelbl.Size = new System.Drawing.Size(35, 13);
+            this.oscorelbl.Size = new System.Drawing.Size(16, 18);
             this.oscorelbl.TabIndex = 18;
-            this.oscorelbl.Text = "label8";
+            this.oscorelbl.Text = "0";
             // 
             // Form1
             // 
@@ -288,7 +292,9 @@ namespace TicTacToe
             this.Controls.Add(this.box3);
             this.Controls.Add(this.box1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "TicTacToe";
             this.ResumeLayout(false);
