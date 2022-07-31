@@ -1,0 +1,10 @@
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe.config
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\bin\Release\TicTacToe.pdb
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.AssemblyReference.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.Form1.resources
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
+C:\Users\Barnabas Solomon\OneDrive\Desktop\C# projects\game\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb

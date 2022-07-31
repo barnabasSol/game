@@ -29,6 +29,7 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.box1 = new System.Windows.Forms.Label();
             this.box3 = new System.Windows.Forms.Label();
             this.box2 = new System.Windows.Forms.Label();
@@ -218,7 +219,7 @@ namespace TicTacToe
             // winnerlabel
             // 
             this.winnerlabel.AutoSize = true;
-            this.winnerlabel.Location = new System.Drawing.Point(196, 395);
+            this.winnerlabel.Location = new System.Drawing.Point(196, 385);
             this.winnerlabel.Name = "winnerlabel";
             this.winnerlabel.Size = new System.Drawing.Size(0, 13);
             this.winnerlabel.TabIndex = 14;
@@ -287,6 +288,7 @@ namespace TicTacToe
             this.Controls.Add(this.box3);
             this.Controls.Add(this.box1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "TicTacToe";
             this.ResumeLayout(false);
